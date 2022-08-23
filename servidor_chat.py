@@ -12,6 +12,7 @@ cliente, end = servidor.accept()
 #Chat em loop infinito
 finalizado = False
 
+#Para finalizar
 while not finalizado:
     msg = cliente.recv(1024).decode('utf-8')
     if msg == 'm@':
